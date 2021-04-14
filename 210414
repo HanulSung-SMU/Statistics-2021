@@ -1,0 +1,34 @@
+ㄴ#표준편차 예제 1
+sd(DF_coffe_location$No_Busan)
+sd(DF_coffe_location$No_Seoul)
+sd(DF_coffe_location$No_Gangneung)
+
+#표준편차 예제2
+sd(DF_student_exam$Class_A)
+sd(DF_student_exam$Class_B)
+
+#범위 예제1
+DF_visitor <- read.csv(file = "data/blog_visitor.csv")
+range(DF_visitor)
+
+#범위 예제2
+range(DF_student_exam$Class_A)
+range(DF_student_exam$Class_B)
+mean(DF_student_exam$Class_A)
+mean(DF_student_exam$Class_B)
+
+#기본 통계량 예제  1
+summary(DF_visitor)
+
+#기본 통계량 예제 2
+summary(DF_student_exam$Class_A)
+summary(DF_student_exam$Class_B)
+
+#주사위를 던지는 경우 확률 분포표 만들기
+DF_dice = data.frame(x=c("P(X=x)"), zero=c("25/36"), one = c("10/36"),two=("1/36"), 합=c("1"))
+DF_dice
+
+#dbinom 함수 예제
+dbinom(1, 10, 0.01)
+dbinom(0, 10, 0.01)
+dbinom(1, 10, 0.01) + dbinom(0, 10, 0.01)
