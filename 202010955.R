@@ -50,3 +50,15 @@ View(X)
 dbinom(3,4,0.3)
 dbinom(0,10,0.01) + dbinom(1,10,0.01)
 
+pbinom(1,10,0.01)
+pbinom(9,100,0.2)
+
+dpois(41,45)
+dpois(40,32)
+ppois(45,41)
+ppois(32,35)
+
+# 2/5, 1/3
+dbinom(4,10,0.5)
+pbinom(1,30,0.05)
+dpois(10,13)
