@@ -17,7 +17,6 @@ range(df$Class_B)
 summary(df$Class_A)
 summary(df$Class_B)
 
-
 # ===============연습문제================#
 # 3번
 DF_mobile_usage <- read.csv("mobile_usage.csv")
@@ -78,3 +77,23 @@ dbinom(0, 2, 1/6) # 주사위 2개 던져서 1 나오는 개수가 0개
 # pbinom(x, size, p)
 pbinom(1, 10, 0.01) # x는 x회 이하
 pbinom(100-91, 100, 1-0.8)
+
+# dpois(x, lambda) x: 횟수 / lambda: 평균발생횟수
+dpois(40, 32)
+
+# ppois(x, lambda) x: x회 이하 / lambda: 평균 발생 횟수
+1-ppois(40, 45) # 평균 발생 횟수가 45일때, 40 초과할 확률 = 41 이상
+1-ppois(34, 32)
+
+
+# 연습문제 4번
+dbinom(4, 10, 0.5)
+
+# 5번
+pbinom(1, 30, 0.05)
+
+# 6번
+dpois(13, 10)
+
+# 7번
+1-ppois(34, 30)
